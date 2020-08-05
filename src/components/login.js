@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/main.css';
+import {Link} from 'react-router-dom'
 
 export default function login(){
     return(
@@ -14,7 +15,7 @@ export default function login(){
               <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Email" type="text"/>
               <input class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4" placeholder="Password" type="string"/>
               <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login In</button>
-              <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+              <p class="text-xs text-gray-500 mt-3"><Link to='./register'>Not registered..?Create an account</Link></p>
             </div>
           </div>
         </section>
