@@ -7,6 +7,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 function App() {
   return (
     <BrowserRouter>
+    <p>Hello</p>
     <switch>
       <Route path='/' component={SignIn} exact/>
     </switch>
