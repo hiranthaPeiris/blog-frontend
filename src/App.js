@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
-import {SignIn} from './component/SignInUI'
-// eslint-disable-next-line no-unused-vars
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import login from './components/login';
+import register from './components/register';
+import profile from './components/profile';
+import Home from './components/home';
 
 function App() {
   return (
     <BrowserRouter>
-    <switch>
-      <Route path='/' component={SignIn} exact/>
-    </switch>
+    
+    <Switch>
+      <Route path='/' component={Home} exact/>
+      <Route path='/login' component={login} exact/>
+      <Route path='/register' component={register} />
+      <Route path='/profile' component={profile}/>
+    </Switch>
     </BrowserRouter>
   );
 }
