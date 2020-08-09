@@ -1,0 +1,22 @@
+.baner_view{
+    height: 500px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.164)
+}
+
+.banner_animation{
+    width: 750px;
+    height: 400px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-image:url(../assets/images/2.jpg);background-position: center;background-repeat: no-repeat;background-size: cover; left:-600px; top:50px;}
+    25%  {background-image:url(../assets/images/2.jpg);background-position: center;background-repeat: no-repeat;background-size: cover; left:50px; top:50px;}
+    50%  {background-image:url(../assets/images/3.jpg);background-position: center;background-repeat: no-repeat;background-size: cover; left:270px; top:50px;}
+    75%  {background-image:url(../assets/images/4.jpg);background-position: center;background-repeat: no-repeat;background-size: cover; left:550px; top:50px;}
+    100% {background-color:white; left:2000px; top:50px;}
+  }
