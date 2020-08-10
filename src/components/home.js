@@ -58,23 +58,23 @@ function Home() {
     <section className="text-gray-900 body-font ">
       <header className="text-gray-700 body-font bg-blue-300">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <p className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <span className="ml-3 text-4xl">BLOGS</span>
+          <p className="flex title-font font-bold items-center text-gray-900 mb-4 md:mb-0">
+            <span className="ml-3 text-4xl font-black font-serif">BLOGS</span>
           </p>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <Link to="./login">
-              <p className="mr-5 hover:text-gray-900 ">SIGN IN</p>
+              <p className="mr-5  hover:text-gray-900 font-black">SIGN IN</p>
             </Link>
             <Link to="./register">
-              <p className="mr-5 hover:text-gray-900">SIGN UP</p>
+              <p className="mr-5 hover:text-gray-900 font-black ">SIGN UP</p>
             </Link>
           </nav>
         </div>
       </header>
       <div className="container min-h-screen px-5 py-10 mx-auto ">
-        <div className="flex flex-row mb-10 lg:items-start items-center bg-gray-300  px-5 py-10 ">
+        <div className="flex flex-row mb-10 lg:items-start items-center bg-gray-500  px-5 py-10 ">
           <div className="flex-grow">
-            <h2 className="text-red-900 text-lg title-font  font-black mb-3">
+            <h2 className="text-red-900 text-2xl title-font  font-black mb-3  ">
               Notices{" "}
             </h2>
             {noticeList.map((item) => {
@@ -124,7 +124,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <footer className="text-gray-700 body-font bg-blue-500">
+      <footer className="text-gray-700 body-font bg-blue-700">
         <div className="bg-gray-200">
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
